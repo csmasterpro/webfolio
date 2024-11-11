@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ข่าวสารเทคโนโลยี</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Teacher Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติ</a></li>
+                <li><a href="academic.html">ผลงานวิชาการ</a></li>
+                <li><a href="teaching.html">การสอน</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+                <li><a href="technews.html" class="active">ข่าวสาร</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="news-header">
+            <h1><i class="fas fa-newspaper"></i> ข่าวสารเทคโนโลยีการศึกษา</h1>
+            
+            <!-- หมวดหมู่ข่าว -->
+            <div class="news-categories">
+                <button class="category-btn active">ทั้งหมด</button>
+                <button class="category-btn">เทคโนโลยี AI</button>
+                <button class="category-btn">Virtual Reality</button>
+                <button class="category-btn">Digital Learning</button>
+                <button class="category-btn">EdTech</button>
+            </div>
+        </section>
+
+        <!-- ข่าวล่าสุด -->
+        <section class="featured-news">
+            <h2>ข่าวล่าสุด</h2>
+            <div class="featured-news-grid">
+                <article class="featured-news-card">
+                    <div class="news-image">
+                        <img src="newsImg/newsAI1.jpg" alt="AI ในห้องเรียน">
+                        <div class="news-category">เทคโนโลยี AI</div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date"><i class="far fa-calendar-alt"></i> 5 พ.ย. 2567</span>
+                        <h3>AI ในห้องเรียน: เทคโนโลยีที่เปลี่ยนการเรียนรู้</h3>
+                        <p>การนำ AI มาประยุกต์ใช้ในการเรียนการสอน เพื่อพัฒนาทักษะผู้เรียนในยุคดิจิทัล ช่วยให้การเรียนการสอนมีประสิทธิภาพมากขึ้น และตอบสนองความต้องการของผู้เรียนได้อย่างเฉพาะเจาะจง</p>
+                        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- รายการข่าวทั้งหมด -->
+        <section class="all-news">
+            <h2>ข่าวทั้งหมด</h2>
+            <div class="news-grid">
+                <!-- ข่าวที่ 1 -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="/api/placeholder/400/200" alt="Virtual Reality">
+                        <div class="news-category">Virtual Reality</div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date"><i class="far fa-calendar-alt"></i> 4 พ.ย. 2567</span>
+                        <h3>Virtual Reality สำหรับการเรียนวิทยาศาสตร์</h3>
+                        <p>การใช้ VR ในการทดลองวิทยาศาสตร์เสมือนจริง เพิ่มประสิทธิภาพการเรียนรู้</p>
+                        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+
+                <!-- ข่าวที่ 2 -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="/api/placeholder/400/200" alt="Digital Learning Platform">
+                        <div class="news-category">Digital Learning</div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date"><i class="far fa-calendar-alt"></i> 3 พ.ย. 2567</span>
+                        <h3>แพลตฟอร์มการเรียนรู้ดิจิทัลแห่งอนาคต</h3>
+                        <p>นวัตกรรมการเรียนการสอนผ่านแพลตฟอร์มออนไลน์ที่ตอบโจทย์การเรียนรู้ยุคใหม่</p>
+                        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+
+                <!-- ข่าวที่ 3 -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="/api/placeholder/400/200" alt="EdTech Trends">
+                        <div class="news-category">EdTech</div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date"><i class="far fa-calendar-alt"></i> 2 พ.ย. 2567</span>
+                        <h3>เทรนด์เทคโนโลยีการศึกษา 2024</h3>
+                        <p>แนวโน้มเทคโนโลยีการศึกษาที่จะเปลี่ยนแปลงวงการการศึกษาในปี 2024</p>
+                        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+
+                <!-- ข่าวที่ 4 -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="/api/placeholder/400/200" alt="Mobile Learning">
+                        <div class="news-category">Digital Learning</div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date"><i class="far fa-calendar-alt"></i> 1 พ.ย. 2567</span>
+                        <h3>Mobile Learning: การเรียนรู้ทุกที่ทุกเวลา</h3>
+                        <p>การพัฒนาแอปพลิเคชันเพื่อการเรียนรู้บนมือถือ ที่ช่วยให้เข้าถึงการศึกษาได้ง่ายขึ้น</p>
+                        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ปุ่มโหลดเพิ่มเติม -->
+            <div class="load-more">
+                <button class="btn btn-large">
+                    <i class="fas fa-sync"></i> โหลดเพิ่มเติม
+                </button>
+            </div>
+        </section>
+
+        <!-- ส่วนค้นหาข่าว -->
+        <aside class="news-sidebar">
+            <div class="search-box">
+                <h3>ค้นหาข่าว</h3>
+                <div class="search-form">
+                    <input type="text" placeholder="ค้นหาข่าว...">
+                    <button class="btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Teacher Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
