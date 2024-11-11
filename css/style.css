@@ -412,7 +412,164 @@ footer {
     padding: 1rem 3rem;
     font-size: 1.1rem;
 }
+/* Gallery Styles */
+.gallery-header {
+    text-align: center;
+    margin: 2rem 0;
+}
 
+.album-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.gallery-albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.album-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+}
+
+.album-cover {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.album-card:hover .album-cover img {
+    transform: scale(1.1);
+}
+
+.album-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.album-card:hover .album-overlay {
+    opacity: 1;
+}
+
+.image-count {
+    color: var(--white);
+    background: rgba(0,0,0,0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.album-info {
+    padding: 1.5rem;
+}
+
+.album-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.album-info p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.album-date {
+    color: #666;
+    font-size: 0.8rem;
+    display: block;
+}
+
+/* Photo Grid in Album View */
+.album-view {
+    margin: 2rem 0;
+}
+
+.album-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.photo-grid a {
+    display: block;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photo-grid a:hover img {
+    transform: scale(1.1);
+}
+
+/* Lightbox Customization */
+.lb-data .lb-caption {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.lb-data .lb-number {
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .album-categories {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .gallery-albums {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        padding: 1rem;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
 @media (max-width: 768px) {
     .news-categories {
         flex-direction: column;

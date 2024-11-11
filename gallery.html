@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - แกลลอรี่</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- เพิ่ม Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Teacher Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติ</a></li>
+                <li><a href="academic.html">ผลงานวิชาการ</a></li>
+                <li><a href="teaching.html">การสอน</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+                <li><a href="tech-news.html">ข่าวสาร</a></li>
+                <li><a href="gallery.html" class="active">แกลลอรี่</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="gallery-header">
+            <h1><i class="fas fa-images"></i> แกลลอรี่ภาพกิจกรรม</h1>
+            
+            <!-- หมวดหมู่อัลบั้ม -->
+            <div class="album-categories">
+                <button class="category-btn active">ทั้งหมด</button>
+                <button class="category-btn">กิจกรรมการสอน</button>
+                <button class="category-btn">กิจกรรมพัฒนาผู้เรียน</button>
+                <button class="category-btn">การอบรมพัฒนาวิชาชีพ</button>
+                <button class="category-btn">ผลงานนักเรียน</button>
+            </div>
+        </section>
+
+        <!-- อัลบั้มรูปภาพ -->
+        <section class="gallery-albums">
+            <!-- อัลบั้ม 1 -->
+            <div class="album-card">
+                <div class="album-cover">
+                    <img src="/api/placeholder/400/300" alt="กิจกรรมการสอนวิทยาศาสตร์">
+                    <div class="album-overlay">
+                        <span class="image-count"><i class="fas fa-image"></i> 12 ภาพ</span>
+                    </div>
+                </div>
+                <div class="album-info">
+                    <h3>กิจกรรมการสอนวิทยาศาสตร์</h3>
+                    <p>การทดลองวิทยาศาสตร์ในห้องปฏิบัติการ ม.4</p>
+                    <span class="album-date"><i class="far fa-calendar-alt"></i> 15 ต.ค. 2567</span>
+                </div>
+            </div>
+
+            <!-- อัลบั้ม 2 -->
+            <div class="album-card">
+                <div class="album-cover">
+                    <img src="/api/placeholder/400/300" alt="ค่ายวิทยาศาสตร์">
+                    <div class="album-overlay">
+                        <span class="image-count"><i class="fas fa-image"></i> 24 ภาพ</span>
+                    </div>
+                </div>
+                <div class="album-info">
+                    <h3>ค่ายวิทยาศาสตร์</h3>
+                    <p>กิจกรรมค่ายวิทยาศาสตร์ประจำปี 2567</p>
+                    <span class="album-date"><i class="far fa-calendar-alt"></i> 5 ก.ย. 2567</span>
+                </div>
+            </div>
+
+            <!-- อัลบั้ม 3 -->
+            <div class="album-card">
+                <div class="album-cover">
+                    <img src="/api/placeholder/400/300" alt="การอบรม AI">
+                    <div class="album-overlay">
+                        <span class="image-count"><i class="fas fa-image"></i> 18 ภาพ</span>
+                    </div>
+                </div>
+                <div class="album-info">
+                    <h3>อบรมการใช้ AI ในการสอน</h3>
+                    <p>การพัฒนาวิชาชีพด้านเทคโนโลยีการสอน</p>
+                    <span class="album-date"><i class="far fa-calendar-alt"></i> 20 ส.ค. 2567</span>
+                </div>
+            </div>
+
+            <!-- อัลบั้ม 4 -->
+            <div class="album-card">
+                <div class="album-cover">
+                    <img src="/api/placeholder/400/300" alt="โครงงานวิทยาศาสตร์">
+                    <div class="album-overlay">
+                        <span class="image-count"><i class="fas fa-image"></i> 15 ภาพ</span>
+                    </div>
+                </div>
+                <div class="album-info">
+                    <h3>โครงงานวิทยาศาสตร์</h3>
+                    <p>ผลงานโครงงานวิทยาศาสตร์ของนักเรียน</p>
+                    <span class="album-date"><i class="far fa-calendar-alt"></i> 10 ส.ค. 2567</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ตัวอย่างการแสดงรูปภาพในอัลบั้ม (เมื่อคลิกที่อัลบั้ม) -->
+        <section class="album-view" id="albumView" style="display: none;">
+            <h2 class="album-title">กิจกรรมการสอนวิทยาศาสตร์</h2>
+            <div class="photo-grid">
+                <a href="/api/placeholder/800/600" data-lightbox="album1" data-title="การทดลองที่ 1">
+                    <img src="/api/placeholder/300/200" alt="Photo 1">
+                </a>
+                <a href="/api/placeholder/800/600" data-lightbox="album1" data-title="การทดลองที่ 2">
+                    <img src="/api/placeholder/300/200" alt="Photo 2">
+                </a>
+                <!-- เพิ่มรูปภาพตามต้องการ -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Teacher Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- เพิ่ม Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
