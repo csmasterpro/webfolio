@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - หน้าแรก</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Teacher Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติ</a></li>
+                <li><a href="academic.html">ผลงานวิชาการ</a></li>
+                <li><a href="teaching.html">การสอน</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="images/1.png" alt="Slide 1">
+                <div class="slide-content">
+                    <h2>ยินดีต้อนรับสู่ Portfolio ของฉัน</h2>
+                    <p>แหล่งรวบรวมผลงานและประสบการณ์ทางการศึกษา</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/2.png" alt="Slide 2">
+                <div class="slide-content">
+                    <h2>ผลงานวิชาการ</h2>
+                    <p>นวัตกรรมและการพัฒนาการเรียนการสอน</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/3.png" alt="Slide 3">
+                <div class="slide-content">
+                    <h2>การสอนที่เป็นเลิศ</h2>
+                    <p>มุ่งมั่นพัฒนาการศึกษาไทย</p>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-btn" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    </div>
+    <main class="container">
+        <section class="highlights">
+            <h2>ไฮไลท์ผลงาน</h2>
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>ประสบการณ์การสอน</h3>
+                    <p>10 ปีในการพัฒนาการศึกษา</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-award"></i>
+                    <h3>รางวัลที่ได้รับ</h3>
+                    <p>ครูดีเด่นประจำปี 2566</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-book"></i>
+                    <h3>ผลงานวิชาการ</h3>
+                    <p>นวัตกรรมการสอนที่ได้รับการยอมรับ</p>
+                </div>
+            </div>
+        </section>
+        <!-- เพิ่มส่วนข่าวสารเทคโนโลยี -->
+        <section class="tech-news">
+            <h2><i class="fas fa-newspaper"></i> ข่าวสารเทคโนโลยีการศึกษา</h2>
+            <div class="news-grid">
+                <!-- ข่าวที่ 1 -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="/api/placeholder/400/200" alt="ข่าวเทคโนโลยี AI">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date"><i class="far fa-calendar-alt"></i> 5 พ.ย. 2567</span>
+                        <h3>AI ในห้องเรียน: เทคโนโลยีที่เปลี่ยนการเรียนรู้</h3>
+                        <p>การนำ AI มาประยุกต์ใช้ในการเรียนการสอน เพื่อพัฒนาทักษะผู้เรียนในยุคดิจิทัล</p>
+                        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+
+                <!-- ข่าวที่ 2 -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="/api/placeholder/400/200" alt="Virtual Reality">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date"><i class="far fa-calendar-alt"></i> 4 พ.ย. 2567</span>
+                        <h3>Virtual Reality สำหรับการเรียนวิทยาศาสตร์</h3>
+                        <p>การใช้ VR ในการทดลองวิทยาศาสตร์เสมือนจริง เพิ่มประสิทธิภาพการเรียนรู้</p>
+                        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+
+                <!-- ข่าวที่ 3 -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="/api/placeholder/400/200" alt="Digital Learning Platform">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date"><i class="far fa-calendar-alt"></i> 3 พ.ย. 2567</span>
+                        <h3>แพลตฟอร์มการเรียนรู้ดิจิทัลแห่งอนาคต</h3>
+                        <p>นวัตกรรมการเรียนการสอนผ่านแพลตฟอร์มออนไลน์ที่ตอบโจทย์การเรียนรู้ยุคใหม่</p>
+                        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ปุ่มดูข่าวทั้งหมด -->
+            <div class="view-all-news">
+                <a href="#" class="btn btn-large">
+                    <i class="fas fa-newspaper"></i> ดูข่าวทั้งหมด
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Teacher MA Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        function changeSlide(n) {
+            showSlide(currentSlide + n);
+        }
+
+        // Auto slide
+        setInterval(() => changeSlide(1), 5000);
+    </script>
+</body>
+</html>

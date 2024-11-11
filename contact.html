@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ติดต่อ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Teacher Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติ</a></li>
+                <li><a href="academic.html">ผลงานวิชาการ</a></li>
+                <li><a href="teaching.html">การสอน</a></li>
+                <li><a href="contact.html" class="active">ติดต่อ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>ติดต่อ</h1>
+
+        <div class="contact-grid">
+            <!-- ข้อมูลการติดต่อ -->
+            <section class="contact-info">
+                <h2><i class="fas fa-address-card"></i> ข้อมูลการติดต่อ</h2>
+                <div class="card">
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-school"></i>
+                            <strong>สถานที่ทำงาน:</strong>
+                            <p>โรงเรียน...</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <strong>ที่อยู่:</strong>
+                            <p>เลขที่... ถนน... ตำบล... อำเภอ... จังหวัด...</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <strong>โทรศัพท์:</strong>
+                            <p>xxx-xxx-xxxx</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <strong>อีเมล:</strong>
+                            <p>example@school.ac.th</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-line"></i>
+                            <strong>Line ID:</strong>
+                            <p>@teacherID</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- แบบฟอร์มติดต่อ -->
+            <section class="contact-form">
+                <h2><i class="fas fa-paper-plane"></i> ส่งข้อความ</h2>
+                <div class="card">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">ชื่อ-นามสกุล <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">อีเมล <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">เรื่อง <span class="required">*</span></label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">ข้อความ <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i> ส่งข้อความ
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- แผนที่ -->
+        <section class="map-section">
+            <h2><i class="fas fa-map-marked-alt"></i> แผนที่</h2>
+            <div class="card">
+                <div class="map-container">
+                    <!-- สามารถแทนที่ด้วย Google Maps Embed Code -->
+                    <img src="/api/placeholder/800/400" alt="แผนที่" class="map-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- ช่องทางโซเชียลมีเดีย -->
+        <section class="social-section">
+            <h2><i class="fas fa-share-alt"></i> โซเชียลมีเดีย</h2>
+            <div class="social-links">
+                <a href="#" class="social-btn">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Teacher Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
